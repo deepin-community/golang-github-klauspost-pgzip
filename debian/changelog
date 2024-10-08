@@ -1,5 +1,85 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-klauspost-pgzip (1.2.6-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 25 Oct 2023 18:01:15 -0400
+
+golang-github-klauspost-pgzip (1.2.5-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on
+      golang-github-klauspost-compress-dev.
+    + golang-github-klauspost-pgzip-dev: Drop versioned constraint on
+      golang-github-klauspost-compress-dev in Depends.
+  * Add Multi-Arch: foreign.
+
+  [ Shengjing Zhu ]
+  * Update section to golang
+  * Update Standards-Version to 4.6.2 (no changes)
+  * Update maintainer address to team+pkg-go@tracker.debian.org
+  * Bump debhelper compat to 13
+  * Add Rules-Requires-Root
+  * Fix uscan watch file
+  * Remove duplicated BSD-3-Clause in d/copyright
+
+ -- Shengjing Zhu <zhsj@debian.org>  Mon, 30 Jan 2023 22:42:25 +0800
+
+golang-github-klauspost-pgzip (1.2.5-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+  [ Reinhard Tartler ]
+  * New upstream version 1.2.5, closes: #962427
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 21 Nov 2020 18:03:32 -0500
+
+golang-github-klauspost-pgzip (1.2.1-1) unstable; urgency=medium
+
+  [ Shengjing Zhu ]
+  * Remove 0001-Remove-flate.HuffmanOnly.patch, since we have
+    golang-github-klauspost-compress-dev >= 1.1 in archive.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream release
+  * Removed "golang-github-klauspost-crc32-dev" from (Build-)Depends.
+  * Priority: optional; Standards-Version: 4.4.1
+  * DH to version 12
+  * Added myself to Uploaders
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 30 Dec 2019 17:31:04 +1100
+
+golang-github-klauspost-pgzip (1.1-1) unstable; urgency=medium
+
+  * Adopt package (Closes: #865329).
+  * New release.
+  * d/compat: bump to v10.
+  * d/control:
+    + Bump Standards-Version to 4.0.0.
+    + Bump dependency of debhelper to 10.
+    + Add autopkgtest-pkg-go Testsuite.
+  * d/copyright:
+    + Change format url to https.
+    + Add myself to copyright holder.
+  * Add 0001-Remove-flate.HuffmanOnly.patch
+    fix build on golang-github-klauspost-compress-dev 1.0
+
+ -- Shengjing Zhu <i@zhsj.me>  Mon, 31 Jul 2017 20:00:34 +0800
+
+golang-github-klauspost-pgzip (1.0-2) unstable; urgency=medium
+
+  * deb/control:
+    + add Tim Potter to uploaders.
+    + bump standards to 3.9.8 (no changes needed).
+
+ -- Daniel Stender <stender@debian.org>  Fri, 20 Jan 2017 08:10:20 +0100
+
+golang-github-klauspost-pgzip (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #807932).
+
+ -- Daniel Stender <stender@debian.org>  Mon, 11 Apr 2016 21:01:34 +0200
